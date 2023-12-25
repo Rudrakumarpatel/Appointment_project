@@ -1,0 +1,231 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main
+{
+  margin:0px 2rem;
+
+  overflow: hidden;
+}
+#navb {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 0.1px 3px black;
+  align-items: center;
+  position:fixed;
+  top:0px;
+  background-color:rgb(217, 222, 252)
+}
+#navb .name
+{
+  margin:1rem;
+  color:blue;
+  font-weight: bold;
+}
+#navb button {
+  width: 4rem;
+  height: 2.3rem;
+  margin-right: 1.5rem;
+}
+.contact {
+
+  display: grid;
+  grid-template-areas:
+    "profile body_name "
+    "profile specilist"
+    "profile view";
+  width: 18rem;
+  margin-top: 4.5rem;
+  margin-bottom: 1rem;
+}
+#profile {
+  margin-left: 2rem;
+  margin-right: 1.5rem;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  grid-area: profile;
+  background-color: aqua;
+}
+#profile_image
+{
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+}
+#body_name {
+  width: 20rem;
+  grid-area: body_name;
+  font-weight: bold;
+  font-size: large;
+}
+#specialist {
+  grid-area: specilist;
+  font-weight: lighter;
+  font-size: 0.9em;
+}
+#view_btn {
+  font-size: 0.7em;
+  grid-area: view;
+  width: 7rem;
+  height: 1.5rem;
+  border: 1px solid blue;
+  color: blue;
+  background-color: white;
+  border-radius: 2px;
+}
+#view_btn:hover {
+  background-color: blue;
+  color: white;
+}
+#Login {
+  border: 1px solid green;
+  color: green;
+  background-color: white;
+  border-radius: 2px;
+}
+#Login:hover {
+  background-color: green;
+  color: white;
+}
+.appoint {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+#book_text {
+  font-size: large;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fees {
+  color: green;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.pay {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+#clinic_text {
+  font-size: large;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2rem;
+}
+#address {
+  flex-wrap: wrap;
+  margin: 2rem;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#address i {
+  color: green;
+}
+.slots
+{
+  display: flex;
+  justify-content: space-evenly;
+}
+.slot
+{
+  padding:0rem 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.date
+{
+  font-weight: bold;
+  font-size: medium;
+  margin:4px;
+}
+.available
+{
+  font-size: smaller;
+  color:green;
+  margin:4px
+}
+#uderline 
+{
+    width:8rem;
+}
+.slot_continer
+{
+  height: auto;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slot_continer span
+{
+  width: 9rem;
+}
+.slot_continer button
+{
+  align-self:flex-end;
+  border-radius: 5px;
+}
+#foot
+{
+  bottom: 0px;
+  text-align: center;
+  background-color: greenyellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.questions
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.questions label
+{
+  width: 50%;
+  margin:1rem 0px;
+}
+.questions p
+{
+  display: flex;
+  text-align: center;
+}
+.questions i
+{
+  width: 2rem;
+  height: 2rem;
+  margin-left: 2rem;
+  background-color:black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white
+}
+details
+{
+  background-color: white;
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+summary
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

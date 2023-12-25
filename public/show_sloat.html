@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>your sloat</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      ~ .doctor {
+        padding: 10px;
+        margin: 5px;
+      }
+      .a {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="doctor_name doctor">abc</div>
+    <div class="doctor_specialist doctor">abc</div>
+    <div class="a">
+      <span>Address:</span>
+      <div class="addreass doctor"></div>
+    </div>
+    <div class="a">
+      <span>Name:</span>
+      <div class="username_2 doctor"></div>
+    </div>
+
+    <div class="sloatss"></div>
+    <script>
+      let Doctor = "Dr.Manik Dalvi";
+      let specialist = "Obstetrics & Gynecology";
+      let address =
+        "Manik Dalvi's Clinic, Kalyan Naka, Rk Business Centre, Opp. Bopal Nagar, Maharashtra, 421302";
+      let slots_array = [];
+      let username = document.getElementById("username").innerHTML;
+
+      document.getElementsByClassName("doctor_name")[0].innerHTML = Doctor;
+      document.getElementsByClassName("doctor_specialist")[0].innerHTML =
+        specialist;
+      document.getElementsByClassName("addreass")[0].innerHTML = address;
+
+      document.getElementsByClassName("username_2")[0].innerHTML = username;
+
+      slots_array.forEach((ele) => {
+        let a = document.createElement("span");
+        a.innerHTML = ele;
+        document.getElementsByClassName("slotss")[0].appendChild(a);
+      });
+    </script>
+  </body>
+</html>

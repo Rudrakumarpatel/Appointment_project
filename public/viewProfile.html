@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="Home.css" />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      #Profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #profi {
+        border-radius: 50%;
+        width: 12rem;
+        height: 12rem;
+        background-color: aqua;
+        margin-top: 6rem;
+        margin-bottom: 1.5rem;
+      }
+      #profi img {
+        width: 12rem;
+        height: 12rem;
+      }
+      #view_name {
+        font-size: 1.8em;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 0.5em;
+      }
+      #special {
+        font-size: 1.1em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+      }
+      a button {
+        background-color: blue;
+        color: white;
+        margin: 1rem;
+        padding: 0.6rem;
+        border-radius: 7px;
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav id="navb">
+        <div class="name"></div>
+        <button id="Login">Login</button>
+      </nav>
+      <div id="Profile">
+        <div id="profi"><img src="" alt="image" id="profile_image" /></div>
+        <div id="view_name"></div>
+        <div id="special"></div>
+        <a href="Home.html"><button>Book Appointment</button></a>
+      </div>
+    </div>
+    <script>
+      let Doctor = "Dr.Manik Dalvi";
+      let specialist = "Obstetrics & Gynecology";
+
+      let profile = document.getElementById("profile_image");
+
+      profile.src = "female.jpg";
+
+      let view_name = document.getElementById("view_name");
+      view_name.innerHTML = Doctor;
+
+      let view_special = document.getElementById("special");
+      view_special.innerHTML = specialist;
+    </script>
+  </body>
+</html>
